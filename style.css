@@ -1,0 +1,331 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            width: fit-content;
+        }
+
+        nav li {
+            /* display: inline-block; */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 5px;
+            font-size: 0.9em;
+            display: block;
+            white-space: nowrap;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Стили для модальных окон */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            border-radius: 5px;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px 5px 0 0;
+            cursor: move;
+        }
+
+        .close-button {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Стили для контента модального окна */
+        .modal-content p, .modal-content ul {
+            font-size: 0.9em;
+        }
+		code {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #c0392b;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #2980b9;
+        }
+
+        .important {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+         .book-container { /* added */
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .book-cover { /* added */
+            width: 80px; /* Or a fixed size */
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .book-info { /* added */
+            flex-grow: 1; /* Allow the info to take up the remaining space */
+        }
+         .animal-entry {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .animal-image {
+            width: 120px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .animal-info {
+            flex-grow: 1; /* Allow the info to take up the remaining space */
+        }
+
+        .fact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fact-list li {
+            margin-bottom: 5px;
+        }
+        .fact-list li::before {
+            content: "• "; /* Bullet point */
+            margin-right: 5px;
+        }
+
+        .book-info a { /*Added for readmore links */
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .book-info a:hover {
+           background-color: #0056b3; /* Darker shade on hover */
+        }
+
+         .topic-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .topic-container img {
+            max-width: 100%; /* Make sure images fit within the container */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-list li {
+            margin-bottom: 5px;
+        }
+
+        .resource-list a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+		.article {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .article h2 {
+            margin-top: 0;
+        }
+
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+		
+		
+		
+		/* CSS-стили, использующие ID (сайт PayMarcet) */
+		
+		
+		
+        #headerH1 {
+            color: #333;
+            text-align: center;
+        }
+
+        #introP {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        #boldTextB {
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        #listH2 {
+            color: #555;
+        }
+
+        #listItem1Li, #listItem2Li, #listItem3Li {
+            margin-bottom: 5px;
+        }
+
+        #footerP {
+            font-size: 0.8em;
+            text-align: center;
+            color: #777;
+        }
+		/* Цвета для разных типов кнопок */
+#cir1 {
+    background-color: #4CAF50; /* Зеленый */
+    color: #fff;
+}
+
+#cir2 {
+    background-color: #008CBA; /* Синий */
+    color: #fff;
+}
+
+#cir3 {
+    background-color: #f44336; /* Красный */
+    color: #fff;
+}
+
+/* Hover-эффекты для разных типов кнопок */
+#cir1:hover {
+    background-color: #367c39;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#cir2:hover {
+    background-color: #006080;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#cir3:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Добавим немного анимации при нажатии */
+.styled-button:active {
+    transform: scale(0.95); /* Уменьшаем размер при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

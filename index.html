@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<div class="container">
+        <header>
+            <h1>Focus</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Поиск...">
+                <button id="searchButton">Найти</button>
+            </div>
+        </header>
+
+<!-------------------------------------------------------------------------------------->
+
+        <nav>
+            <ul>
+                <li><a href="#" data-modal="books-modal">Лайфхаки по HTML</a></li>
+
+                <li><a href="#" data-modal="news-modal">GameMarket</a></li>
+
+                <li><a href="#" data-modal="mail-modal">Developers</a></li>
+
+                <li><a href="#" data-modal="maps-modal">Наука о "конце света"</a></li>
+
+                <li><a href="#" data-modal="future-tech-modal">Будущее технологий</a></li>
+
+                <li><a href="#" data-modal="space-exploration-modal">Исследование космоса</a></li>
+
+                <li><a href="#" data-modal="coding-secrets-modal">Секреты программирования</a></li>
+
+                <li><a href="#" data-modal="productivity-tips-modal">Советы по продуктивности</a></li>
+
+                <li><a href="#" data-modal="What is the danger of teenage infatuation?-modal">What is the danger of teenage infatuation?</a></li>
+
+                <li><a href="#" data-modal="C++ Lesson 1: Introduction to C++ and Basic Syntax-modal">C++ Lesson 1: Introduction to C++ and Basic Syntax</a></li>
+
+                <li><a href="#" data-modal="What's Trending with American Teens?-modal">What's Trending with American Teens?</a></li>
+
+                <li><a href="#" data-modal="Что Интересно Российским Подросткам?-modal">Что Интересно Российским Подросткам?</a></li>
+
+                <li><a href="#" data-modal="Рекомендуемые Русские Книги-modal">Рекомендуемые Русские Книги</a></li>
+
+                <li><a href="#" data-modal="Retro Code Editor: Journal of Development-modal">Retro Code Editor: Journal of Development</a></li>
+
+                <li><a href="#" data-modal="Удивительный Мир Животных-modal">Удивительный Мир Животных</a></li>
+
+                <li><a href="#" data-modal="newss-modal">Awesome HTML Tricks: A Handbook</a></li>
+
+                <li><a href="#" data-modal="news">programming</a></li>
+				
+				<li><a href="#" data-modal="PayMarcet">PayMarcet</a></li>
+				
+				<li><a href="#" data-modal="Привет, будущий Python-разработчик!">Привет, будущий Python-разработчик!</a></li>
+			</ul>
+        </nav>
+    </div>
+
+<!--------------------------------------------------------------------------------------->
+
+    <!-- Модальные окна -->
+    <div id="books-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Лайфхаки по HTML</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Лайфхаки по HTML</h3>
+            <h4 align="center">В этой статье мы обсудим, как улучшить ваш сайт.</h4>
+            <p>Вот 20 советов, которые помогут вам сделать ваш HTML-код более эффективным, читаемым и удобным для пользователей:</p>
+
+            <ol>
+                <li><strong>Используйте семантические теги:</strong>
+                    <code>&lt;header&gt;</code>,
+                    <code>&lt;nav&gt;</code>,
+                    <code>&lt;main&gt;</code>,
+                    <code>&lt;article&gt;</code>,
+                    <code>&lt;aside&gt;</code>,
+                    <code>&lt;footer&gt;</code> – они улучшают структуру, доступность и SEO.</li>
+
+                <li><strong>Сжимайте изображения:</strong> Используйте инструменты, чтобы уменьшить размер файлов без существенной потери качества (например, TinyPNG, ImageOptim).</li>
+
+                <li><strong>Оптимизируйте заголовки:</strong>
+                    <code>&lt;h1&gt;</code> - для главного заголовка, далее
+                    <code>&lt;h2&gt;</code> -
+                    <code>&lt;h6&gt;</code> для подзаголовков, обеспечивая логичную иерархию.</li>
+
+                <li><strong>Используйте атрибут <code>alt</code> для изображений:</strong> Описывайте изображения для пользователей с ограниченными возможностями и для SEO.</li>
+
+                <li><strong>Добавляйте описания мета-тегов:</strong>
+                    <code>&lt;meta name="description" ...&gt;</code> – привлекательные описания для поисковых систем.</li>
+
+                <li><strong>Размещайте ключевые слова:</strong> Умеренно используйте ключевые слова в заголовках, текстах и описаниях.</li>
+
+                <li><strong>Используйте отступы (Indentation):</strong> Делайте код читаемым, отступая строки внутри тегов.</li>
+
+                <li><strong>Комментируйте код:</strong> Объясняйте сложные участки кода, чтобы легче было понять его вам и другим разработчикам.</li>
+
+                <li><strong>Разделяйте HTML, CSS и JavaScript:</strong> Храните HTML, CSS и JavaScript в отдельных файлах для лучшей организации и поддержки.</li>
+
+                <li><strong>Минимизируйте код (Minify HTML):</strong> Удалите пробелы и ненужные символы из HTML-кода, чтобы уменьшить размер файла (используйте онлайн-инструменты).</li>
+
+                <li><strong>Адаптивный дизайн (Responsive Design):</strong> Используйте
+                    <code>&lt;meta name="viewport" ...&gt;</code> и CSS медиа-запросы для корректного отображения на разных устройствах.</li>
+
+                <li><strong>Оптимизируйте скорость загрузки:</strong> Минимизируйте HTTP-запросы, используйте кэширование браузера, оптимизируйте код.</li>
+
+                <li><strong>Сделайте навигацию интуитивно понятной:</strong> Простая и логичная структура меню, понятные названия разделов.</li>
+
+                <li><strong>Оптимизируйте ссылки:</strong> Используйте атрибуты <code>title</code> для пояснения ссылок и <code>target="_blank"</code> для открытия ссылок в новых вкладках (с осторожностью).</li>
+
+                <li><strong>Предоставьте удобные формы:</strong> Используйте <code>&lt;label&gt;</code> для привязки к полям формы и обеспечивайте валидацию.</li>
+
+                <li><strong>Убедитесь в достаточной контрастности:</strong> Текст должен хорошо читаться на фоне.</li>
+
+                <li><strong>Используйте ARIA-атрибуты:</strong> Для улучшения доступности веб-приложений для вспомогательных технологий (скринридеры).</li>
+
+                <li><strong>Предоставьте альтернативные варианты для медиафайлов:</strong> Подписи для видео, транскрипты для аудио.</li>
+
+                <li><strong>Убедитесь, что сайт работает с клавиатуры:</strong> Пользователи должны иметь возможность перемещаться по сайту с помощью клавиши Tab.</li>
+
+                <li><strong>Валидируйте HTML-код:</strong> Используйте валидаторы HTML (например, W3C Validator) для проверки на ошибки.</li>
+            </ol>
+        </div>
+    </div>
+
+<!-------------------------------------------------------------------------------->
+
+    <div id="news-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">GameMarket</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <p>Ошибка номер 2 :( (Введите в строку поиска "mistakes")</p>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------------->
+
+    <div id="mail-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Developers</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Developers:</h3>
+            <ol>
+                <li><strong><i>Loginov Ernest</i></strong></li>
+                <li><strong><i>Zhenya Nazarov</i></strong></li>
+            </ol>
+            <h3 align="center">Web Designer:</h3>
+            <ol>
+                <li><strong><i>Yaroslav Madestov</i></strong></li>
+            </ol>
+            <h3 align="center">Автор идеи:</h3>
+            <ol>
+                <li><strong><i>Polina Suvalova</i></strong></li>
+            </ol>
+        </div>
+    </div>
+
+<!--------------------------------------------------------------------------------------->
+
+     <div id="maps-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Наука о "конце света"</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Почему Конец Света — Маловероятный Сценарий: Разум и Наука Против Апокалипсиса</h3>
+            <p><b>В течение многих веков человечество было очаровано, и часто устрашено, перспективой конца света. Различные культуры и религии предлагали свои собственные сценарии апокалипсиса, от библейского потопа до предсказаний Нострадамуса. В современном мире эти страхи подогреваются голливудскими блокбастерами и тревожными новостями о глобальных проблемах. Однако, давайте отбросим эмоции и рассмотрим, почему, основываясь на науке и разуме, конец света в ближайшем будущем представляется крайне маловероятным.</b></p>
+            <p>1. <i>Научный Метод</i> – Наш Главный Инструмент:</p>
+            <p>В отличие от древних пророчеств, современные прогнозы основаны на строгом научном методе. Ученые изучают потенциальные угрозы, собирают данные, строят модели и делают выводы, основанные на доказательствах. Это не гадание на кофейной гуще, а кропотливая работа, направленная на понимание мира и предсказание его будущего.</p>
+            <p>2. <i>Оценка Рисков</i> – От Астероидов до Пандемий:</p>
+            <p>Конечно, риски существуют. Однако, современная наука позволяет нам оценивать эти риски и разрабатывать стратегии смягчения последствий.</p>
+            <p><b>Астероиды:</b> Существует множество программ по отслеживанию астероидов, и в случае обнаружения опасного объекта у нас есть потенциальные технологии для его отклонения.</p>
+            <p><b>Ядерная война:</b> Хотя это, безусловно, серьезная угроза, политические процессы и международные соглашения направлены на предотвращение ее возникновения.</p>
+            <p><b>Пандемии:</b> Мы пережили множество эпидемий в прошлом, и каждый раз человечество находило способы борьбы с ними. Развитие медицины и биотехнологий позволяет нам быстрее разрабатывать вакцины и лекарства.</p>
+            <p><b>Изменение климата:</b> Это серьезная проблема, требующая немедленных действий. Однако, даже в самых пессимистичных сценариях, речь идет не о полном уничтожении человечества, а о серьезных экономических и социальных потрясениях, к которым мы можем и должны адаптироваться.</p>
+            <p><b>Искусственный Интеллект:</b> Опасения по поводу ИИ, захватывающего мир, преувеличены. Контроль над разработкой ИИ и этические принципы его использования – это то, над чем активно работают ученые и правительства.</p>
+            <p>3. <i>Человеческая Адаптивность и Изобретательность:</i></p>
+            <p>История человечества – это история преодоления трудностей. Мы адаптировались к экстремальным условиям, пережили голод и болезни, и всегда находили способы выжить и процветать. В критической ситуации человеческая изобретательность и способность к сотрудничеству могут стать решающим фактором.</p>
+            <p>4. <i>Избыточность и Распределенность:</i></p>
+            <p>В отличие от древних цивилизаций, которые часто были сосредоточены в одном регионе и зависели от одного источника ресурсов, современное человечество распределено по всему миру. У нас есть множество различных экономических, политических и социальных систем. Это создает избыточность, которая повышает нашу устойчивость к глобальным катастрофам.</p>
+            <p>5. <i>Постоянное Развитие Науки и Технологий:</i></p>
+            <p><b>Наука и технологии не стоят на месте. Мы постоянно разрабатываем новые способы решения проблем и смягчения рисков. От новых источников энергии до передовых медицинских технологий, наше будущее зависит от нашей способности к инновациям.</b></p>
+        </div>
+    </div>
+
+<!---------------------------------------------------------------------------------->
+
+    <div id="future-tech-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Будущее технологий</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Технологии, которые изменят мир:</h3>
+            <p><b>Квантовые компьютеры:</b> Революционизируют вычисления, позволяя решать задачи, не под силу классическим компьютерам.</p>
+            <p><b>Биотехнологии:</b> От редактирования генома до создания искусственных органов, биотехнологии изменят медицину и сельское хозяйство.</p>
+            <p><b>Искусственный интеллект:</b> Все более умные и автономные системы будут использоваться во всех сферах жизни, от транспорта до образования.</p>
+            <p><b>Возобновляемая энергетика:</b> Солнечная, ветровая и другие источники энергии станут основой устойчивой энергетики.</p>
+            <p><b>Космические технологии:</b> Колонизация Луны и Марса, добыча ресурсов в космосе - будущее человечества за пределами Земли.</p>
+        </div>
+    </div>
+
+<!-------------------------------------------------------------------------------------->
+
+    <div id="space-exploration-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Исследование космоса</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Загадки и перспективы космоса:</h3>
+            <p><b>Поиск внеземной жизни:</b> Существуют ли другие цивилизации во Вселенной? Поиски продолжаются.</p>
+            <p><b>Колонизация Марса:</b> Сможет ли человечество создать самодостаточную колонию на Красной планете?</p>
+            <p><b>Темная материя и темная энергия:</b> Что составляет большую часть Вселенной, которую мы не можем увидеть?</p>
+            <p><b>Путешествия во времени:</b> Возможно ли перемещение во времени, хотя бы теоретически?</p>
+            <p><b>Альтернативные вселенные:</b> Существуют ли другие вселенные, и можем ли мы когда-нибудь их достичь?</p>
+        </div>
+    </div>
+
+<!--------------------------------------------------------------------------------------->
+
+     <div id="coding-secrets-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Секреты программирования</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Советы для эффективного программирования:</h3>
+            <p><b>Чистый код:</b> Пишите код, который легко читать и понимать.</p>
+            <p><b>Тестирование:</b> Регулярно тестируйте свой код, чтобы выявить и исправить ошибки.</p>
+            <p><b>Документация:</b> Хорошая документация помогает другим разработчикам понять ваш код.</p>
+            <p><b>Рефакторинг:</b> Периодически пересматривайте и улучшайте свой код.</p>
+            <p><b>Изучение новых технологий:</b> Будьте в курсе последних тенденций в мире программирования.</p>
+        </div>
+    </div>
+
+    <div id="productivity-tips-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Советы по продуктивности</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">Как работать эффективнее:</h3>
+            <p><b>Планирование:</b> Составляйте список задач на день и придерживайтесь его.</p>
+            <p><b>Приоритизация:</b> Определите самые важные задачи и выполняйте их в первую очередь.</p>
+            <p><b>Делегирование:</b> Передавайте задачи, которые могут выполнить другие.</p>
+            <p><b>Отдых:</b> Регулярно делайте перерывы, чтобы избежать выгорания.</p>
+            <p><b>Автоматизация:</b> Используйте инструменты для автоматизации повторяющихся задач.</p>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------->
+
+<div id="What is the danger of teenage infatuation?-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Советы по продуктивности</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h3 align="center">The Delicate Dance: Navigating the Dangers of Teenage Infatuation</h3>
+            <p>Teenage infatuation is a powerful force. It's the rush of adrenaline, the butterfly-inducing glance across the classroom, the feeling that <em>this</em> person is the key to happiness. It's a perfectly normal, even beautiful, part of growing up. But like any strong current, it can also be dangerous if not navigated carefully.</p>
+
+    <p>While often harmless and short-lived, teenage infatuation, when unchecked or misunderstood, can lead to several potential pitfalls:</p>
+
+    <h2>1. Distorted Reality and Idealization</h2>
+
+    <p>Infatuation often involves projecting idealized qualities onto the object of affection. Teenagers may see what they <em>want</em> to see rather than the person as they truly are. This can lead to:</p>
+
+    <ul>
+        <li><strong>Disappointment and heartbreak:</strong> When the "perfect" image clashes with reality, the resulting disillusionment can be devastating.</li>
+        <li><strong>Ignoring red flags:</strong> A strong infatuation can blind a teenager to warning signs of unhealthy or even abusive behavior in the other person.</li>
+    </ul>
+
+    <h2>2. Neglecting Personal Growth and Responsibilities</h2>
+
+    <p>An all-consuming infatuation can take over a teenager's life, leading to:</p>
+
+    <ul>
+        <li><strong>Academic decline:</strong> Spending excessive time thinking about, texting, or trying to be with the object of affection can detract from studies and other important responsibilities.</li>
+        <li><strong>Neglecting friendships and hobbies:</strong> The focus shifts solely to the infatuation, leading to a neglect of existing social connections and activities that contribute to overall well-being.</li>
+        <li><strong>Identity crisis:</strong> Teenagers are still developing their sense of self. An intense infatuation can lead them to define themselves based on the other person's interests and preferences, potentially stifling their own individuality.</li>
+    </ul>
+
+    <h2>3. Risky Behavior and Unhealthy Relationships</h2>
+
+    <p>The intensity of teenage infatuation can sometimes lead to poor decision-making:</p>
+
+    <ul>
+        <li><strong>Pressure to engage in sexual activity:</strong> A desire to please or impress the object of affection can lead teenagers to engage in sexual activity before they are emotionally ready.</li>
+        <li><strong>Compromising values and boundaries:</strong> The desperation to maintain the infatuation can lead to compromising personal values and boundaries, putting them at risk of exploitation.</li>
+        <li><strong>Obsessive behavior and stalking:</strong> In extreme cases, infatuation can morph into unhealthy obsession, leading to stalking or other forms of harassment.</li>
+    </ul>
+
+    <h2>4. Emotional Instability and Mental Health</h2>
+
+    <p>The emotional rollercoaster of teenage infatuation can contribute to:</p>
+
+    <ul>
+        <li><strong>Increased anxiety and depression:</strong> The fear of rejection, the constant need for validation, and the highs and lows of the relationship can take a toll on mental health.</li>
+        <li><strong>Low self-esteem:</strong> Basing self-worth on the approval of the object of affection can lead to feelings of inadequacy and low self-esteem.</li>
+        <li><strong>Difficulty coping with rejection:</strong> Rejection can be especially painful during this formative period, leading to feelings of despair and isolation.</li>
+    </ul>
+
+    <h2>Navigating the Challenges</h2>
+
+    <p>So, what can teenagers and adults do to navigate the potential dangers of teenage infatuation?</p>
+
+    <ul>
+        <li><strong>Open communication:</strong> Parents and educators should create a safe space for teenagers to discuss their feelings and experiences.</li>
+        <li><strong>Realistic expectations:</strong> Help teenagers understand that infatuation is not the same as love and that it's okay for feelings to change.</li>
+        <li><strong>Maintaining balance:</strong> Encourage teenagers to continue pursuing their interests, spending time with friends and family, and prioritizing their responsibilities.</li>
+        <li><strong>Promoting self-esteem:</strong> Help teenagers develop a strong sense of self-worth that is not dependent on the approval of others.</li>
+        <li><strong>Recognizing red flags:</strong> Educate teenagers about the signs of unhealthy or abusive relationships and how to seek help if they need it.</li>
+        <li><strong>Seeking professional help:</strong> If a teenager is struggling to cope with the emotional intensity of infatuation or is exhibiting signs of depression or anxiety, seeking professional help is crucial.</li>
+    </ul>
+
+    <p>Teenage infatuation is a normal and potentially exciting part of growing up. By understanding its potential dangers and providing teenagers with the support and guidance they need, we can help them navigate this delicate dance and emerge stronger and more resilient. The key is to encourage healthy emotional development and balanced perspectives, empowering teenagers to build fulfilling relationships based on genuine connection and mutual respect, rather than fleeting fantasy.</p>
+	
+        </div>
+    </div>
+	
+<!------------------------------------------------------------------------------------------>
+
+ <div id="C++ Lesson 1: Introduction to C++ and Basic Syntax-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">C++ Lesson 1: Introduction to C++ and Basic Syntax</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+
+    <h1>C++ Lesson 1: Introduction to C++ and Basic Syntax</h1>
+
+    <p>Welcome to the first lesson in our C++ tutorial! This lesson will cover the basics of C++, its history, and the fundamental syntax you need to get started. C++ is a powerful, versatile programming language used in a wide range of applications, from operating systems and game development to high-performance computing and embedded systems.</p>
+
+    <h2>What is C++?</h2>
+
+    <p>C++ is a general-purpose programming language created by Bjarne Strou which means it supports concepts like classes, objects, inheritance, polymorphism, and encapsulation.</p>
+
+    <h2>Why Learn C++?</h2>
+
+    <p>Learning C++ provides you with:</p>
+
+    <ul>
+        <li><strong>Performance:</strong> C++ allows for fine-grained control over system resources, leading to highly optimized and efficient code.</li>
+        <li><strong>Versatility:</strong> C++ can be used to develop a wide variety of applications.</li>
+        <li><strong>Foundation:</strong>  Understanding C++ provides a solid foundation for learning other programming languages.</li>
+        <li><strong>Job Opportunities:</strong> C++ developers are in high demand in various industries.</li>
+    </ul>
+
+    <h2>Basic Syntax</h2>
+
+    <p>Let's dive into the basic syntax of C++. We'll start with a simple "Hello, World!" program.</p>
+
+    <pre>
+<code>
+#include &lt;iostream&gt;
+
+int main() {
+  std::cout << "Hello, World!" << std::endl;
+  return 0;
+}
+</code>
+    </pre>
+
+    <p>Let's break down this code:</p>
+
+    <ol>
+        <li><strong><code>#include &lt;iostream&gt;</code>:</strong> This line includes the iostream library, which provides input and output functionalities. <code>iostream</code> stands for Input Output Stream. Without including this library, you won't be able to use <code>std::cout</code> to print output to the console.</li>
+        <li><strong><code>int main() { ... }</code>:</strong> This is the main function, where the execution of the program begins.  Every C++ program must have a <code>main()</code> function. The <code>int</code> keyword indicates that the function returns an integer value.</li>
+        <li><strong><code>std::cout << "Hello, World!" << std::endl;</code>:</strong> This line does the actual printing.
+            <ul>
+                <li><code>std::cout</code>: This is the standard output stream object (usually the console).</li>
+                <li><code><<</code>: This is the insertion operator, used to send output to the stream.</li>
+                <li><code>"Hello, World!"</code>: This is the string you want to print.</li>
+                <li><code>std::endl</code>: This inserts a newline character, moving the cursor to the next line in the console.</li>
+            </ul>
+        </li>
+        <li><strong><code>return 0;</code>:</strong> This line indicates that the program has executed successfully. Returning 0 from the <code>main()</code> function is a convention in C++ (and C).</li>
+    </ol>
+
+    <h2>Compiling and Running the Code</h2>
+
+    <p>To compile and run this code, you'll need a C++ compiler. A popular choice is <a href="https://gcc.gnu.org/" target="_blank">GCC (GNU Compiler Collection)</a>.  You can also use an Integrated Development Environment (IDE) like <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> with the C++ extension.</p>
+
+    <ol>
+        <li><strong>Save the code:</strong> Save the code in a file named <code>hello.cpp</code>.</li>
+        <li><strong>Compile:</strong> Open a terminal or command prompt and navigate to the directory where you saved the file. Then, use the following command to compile the code:
+            <pre><code>g++ hello.cpp -o hello</code></pre>
+        </li>
+        <li><strong>Run:</strong>  After successful compilation, you can run the program using:
+            <pre><code>./hello</code></pre>
+        </li>
+    </ol>
+
+    <p>This will output "Hello, World!" to your console.</p>
+
+    <h2>Variables and Data Types</h2>
+
+    <p>Variables are used to store data. In C++, you must declare the data type of a variable before using it. Here are some common data types:</p>
+
+    <ul>
+        <li><code>int</code>: Integer (whole numbers)</li>
+        <li><code>float</code>: Floating-point number (numbers with decimal points)</li>
+        <li><code>double</code>: Double-precision floating-point number (more precise than float)</li>
+        <li><code>char</code>: Character (single character)</li>
+        <li><code>bool</code>: Boolean (true or false)</li>
+        <li><code>std::string</code>: Sequence of characters (text) - requires including the <code>&lt;string&gt;</code> header.</li>
+    </ul>
+
+    <pre>
+<code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+  int age = 30;
+  float height = 5.9f;
+  double pi = 3.141592665359;
+  char initial = 'J';
+  bool isStudent = true;
+  std::string name = "John Doe";
+
+  std::cout << "Name: " << name << std::endl;
+  std::cout << "Age: " << age << std::endl;
+  std::cout << "Height: " << height << std::endl;
+  std::cout << "Pi: " << pi << std::endl;
+  std::cout << "Initial: " << initial << std::endl;
+  std::cout << "Is Student: " << isStudent << std::endl;
+
+  return 0;
+}
+</code>
+    </pre>
+
+    <p>This code demonstrates how to declare and initialize variables of different data types. Remember to include the <code>&lt;string&gt;</code> header when using <code>std::string</code>.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>This lesson provided a basic introduction to C++ and its syntax.  You learned about its history, its importance, and how to write, compile, and run a simple C++ program.  You also learned about variables and basic data types.  In the next lesson, we will explore more advanced concepts, including operators, control flow, and functions. Keep practicing and exploring!</p>
+
+</body>
+</html>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------------->
+
+<div id="What's Trending with American Teens?-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">What's Trending with American Teens?</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>What's Trending with American Teens?</h1>
+
+    <div class="topic-container">
+        <h2>Gaming & Esports</h2>
+        <img src="" alt="Gaming Setup">
+        <p>From Fortnite to League of Legends, gaming is a huge part of teen culture.  Esports is also becoming increasingly popular, with many teens dreaming of becoming professional gamers.</p>
+        <h3>Resources:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a> - Watch live streams of your favorite games.</li>
+            <li><a href="https://www.youtube.com/gaming" target="_blank">YouTube Gaming</a> - Find game reviews, walkthroughs, and esports highlights.</li>
+            <li><a href="https://www.espn.com/esports/" target="_blank">ESPN Esports</a> - Get the latest esports news and scores.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Social Media & Influencers</h2>
+        <img src="" alt="Social Media">
+        <p>Platforms like TikTok, Instagram, and Snapchat are essential for staying connected.  Teens follow their favorite influencers for style inspiration, entertainment, and product recommendations.</p>
+        <h3>Resources:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a> - Short-form video platform.</li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a> - Photo and video sharing app.</li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a> - A massive video platform with content for every interest.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Music & Pop Culture</h2>
+        <img src="" alt="Concert">
+        <p>Staying up-to-date with the latest music releases, concerts, and pop culture trends is a priority.  Streaming services have made it easier than ever to discover new artists and songs.</p>
+        <h3>Resources:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.spotify.com/" target="_blank">Spotify</a> - Stream music and podcasts.</li>
+            <li><a href="https://www.billboard.com/" target="_blank">Billboard</a> - Get the latest music charts and news.</li>
+            <li><a href="https://pitchfork.com/" target="_blank">Pitchfork</a> - Music reviews and commentary.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Fashion & Style</h2>
+        <img src="" alt="Fashion">
+        <p>Expressing individuality through clothing and style is important.  Trends are constantly evolving, influenced by social media, celebrities, and street style.</p>
+        <h3>Resources:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.vogue.com/" target="_blank">Vogue</a> - Fashion news, trends, and inspiration.</li>
+            <li><a href="https://www.highsnobiety.com/" target="_blank">Highsnobiety</a> - Streetwear and contemporary fashion.</li>
+            <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a> - Find style inspiration and create mood boards.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Activism & Social Justice</h2>
+        <img src="" alt="Protest">
+        <p>Many teens are passionate about social issues and are using their voices to advocate for change.  They are engaged in movements related to climate change, racial justice, LGBTQ+ rights, and more.</p>
+        <h3>Resources:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.aclu.org/" target="_blank">American Civil Liberties Union (ACLU)</a> - Defending individual rights and liberties.</li>
+            <li><a href="https://www.amnesty.org/" target="_blank">Amnesty International</a> - Fighting for human rights worldwide.</li>
+            <li><a href="https://www.unicef.org/" target="_blank">UNICEF</a> - Working for the rights of every child.</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+	
+<!-------------------------------------------------------------------------------------->
+
+    <div id="Что Интересно Российским Подросткам?-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Что Интересно Российским Подросткам?</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Что Интересно Российским Подросткам?</h1>
+
+    <div class="topic-container">
+        <h2>Игры и Киберспорт</h2>
+        <img src="" alt="Игровая Установка">
+        <p>От Dota 2 и Counter-Strike до Minecraft и Genshin Impact, игры занимают важное место в жизни подростков. Киберспорт также набирает популярность, и многие мечтают стать профессиональными игроками.</p>
+        <h3>Ресурсы:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a> - Смотрите прямые трансляции любимых игр.</li>
+            <li><a href="https://www.youtube.com/gaming" target="_blank">YouTube Gaming</a> - Найдите обзоры игр, прохождения и записи киберспортивных турниров.</li>
+            <li><a href="https://cyber.sports.ru/" target="_blank">CyberSport.ru</a> - Новости киберспорта и игровой индустрии.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Социальные Сети и Блогеры</h2>
+        <img src="" alt="Социальные Сети">
+        <p>Платформы, такие как VK, TikTok, Instagram и Telegram, необходимы для поддержания связи с друзьями. Подростки следят за своими любимыми блогерами, чтобы узнавать о моде, развлечениях и рекомендациях товаров.</p>
+        <h3>Ресурсы:</h3>
+        <ul class="resource-list">
+            <li><a href="https://vk.com/" target="_blank">VK</a> - Российская социальная сеть.</li>
+            <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a> - Платформа для коротких видео.</li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a> - Приложение для обмена фотографиями и видео.</li>
+            <li><a href="https://t.me/" target="_blank">Telegram</a> - Мессенджер с каналами и группами.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Музыка и Поп-культура</h2>
+        <img src="" alt="Концерт">
+        <p>Быть в курсе последних музыкальных релизов, концертов и трендов поп-культуры - важная задача. Стриминговые сервисы упростили открытие новых исполнителей и песен.</p>
+        <h3>Ресурсы:</h3>
+        <ul class="resource-list">
+            <li><a href="https://music.yandex.ru/" target="_blank">Яндекс Музыка</a> - Стриминговый сервис.</li>
+            <li><a href="https://zvooq.online/" target="_blank">Zvooq.online</a> - онлайн Музыка</li>
+            <li><a href="https://www.afisha.ru/" target="_blank">Афиша</a> - Новости музыки, кино и других событий.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Мода и Стиль</h2>
+        <img src="" alt="Мода">
+        <p>Выражение индивидуальности через одежду и стиль имеет большое значение. Тренды постоянно меняются, под влиянием социальных сетей, знаменитостей и уличного стиля.</p>
+        <h3>Ресурсы:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.elle.ru/" target="_blank">Elle Russia</a> - Новости моды, тренды и вдохновение.</li>
+            <li><a href="https://www.cosmo.ru/" target="_blank">Cosmopolitan Russia</a> - Мода, красота, отношения.</li>
+            <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a> - Поиск вдохновения для стиля и создание досок настроения.</li>
+        </ul>
+    </div>
+
+    <div class="topic-container">
+        <h2>Технологии и Гаджеты</h2>
+        <img src="" alt="Технологии">
+        <p>Последние смартфоны, ноутбуки, наушники и другие гаджеты всегда в центре внимания. Российские подростки следят за новинками и технологическими трендами.</p>
+        <h3>Ресурсы:</h3>
+        <ul class="resource-list">
+            <li><a href="https://www.ixbt.com/" target="_blank">iXBT.com</a> - Обзоры технологий и гаджетов.</li>
+            <li><a href="https://hi-tech.mail.ru/" target="_blank">Hi-Tech Mail.ru</a> - Новости высоких технологий.</li>
+            <li><a href="https://www.youtube.com/user/Wylsacom" target="_blank">Wylsacom</a> - YouTube-канал о технологиях (популярный русскоязычный блогер).</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+    <div id="Рекомендуемые Русские Книги-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Рекомендуемые Русские Книги</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Рекомендуемые Русские Книги</h1>
+
+    <div class="book-container">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/51k0nQn47AL._SL500_.jpg" alt="Преступление и наказание">
+        <div class="book-info">
+            <h2>Преступление и наказание</h2>
+            <h3>Фёдор Достоевский</h3>
+            <p>Роман о студенте, совершившем убийство из-за своих философских убеждений и последующих муках совести. Классика русской литературы, затрагивающая вопросы морали, вины и искупления.</p>
+            <a href="https://www.litres.ru/fedor-dostoevskiy/prestuplenie-i-nakazanie/" target="_blank">Читать на Litres</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img class="book-cover" src="https://cdn1.ozone.ru/multimedia/c750/1018044584.jpg" alt="Мастер и Маргарита">
+        <div class="book-info">
+            <h2>Мастер и Маргарита</h2>
+            <h3>Михаил Булгаков</h3>
+            <p>Роман, сочетающий в себе элементы сатиры, фантастики и драмы, повествует о визите дьявола в Москву и истории любви Мастера и Маргариты. Один из самых известных и загадочных романов русской литературы XX века.</p>
+            <a href="https://www.litres.ru/mihail-bulgakov/master-i-margarita-11832015/" target="_blank">Читать на Litres</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img class="book-cover" src="https://cdn.eksmo.ru/v2/ASE000000000836038/COVER/cover1___.jpg" alt="Евгений Онегин">
+        <div class="book-info">
+            <h2>Евгений Онегин</h2>
+            <h3>Александр Пушкин</h3>
+            <p>Роман в стихах о молодом аристократе, разочаровавшемся в жизни и отвергнувшем любовь провинциальной девушки. Энциклопедия русской жизни начала XIX века, наполненная лиризмом и иронией.</p>
+            <a href="https://www.litres.ru/aleksandr-pushkin/evgeniy-onegin-9977318/" target="_blank">Читать на Litres</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img class="book-cover" src="https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_max150/8898598-lev-tolstoy-voyna-i-mir-tom-1.jpg" alt="Война и мир">
+        <div class="book-info">
+            <h2>Война и мир</h2>
+            <h3>Лев Толстой</h3>
+            <p>Эпический роман, описывающий жизнь русского общества в эпоху наполеоновских войн. Масштабное полотно, изображающее судьбы нескольких семей на фоне исторических событий.</p>
+            <a href="https://www.litres.ru/lev-tolstoy/voyna-i-mir-tom-1/" target="_blank">Читать на Litres</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img class="book-cover" src="https://book24.ru/upload/iblock/a5a/a5a046a986d71c951154768c7e28d6c9.jpg" alt="Герой нашего времени">
+        <div class="book-info">
+            <h2>Герой нашего времени</h2>
+            <h3>Михаил Лермонтов</h3>
+            <p>Психологический роман о молодом офицере Печорине, разочарованном в жизни и ищущем острых ощущений. Исследование характера "лишнего человека" в русской литературе XIX века.</p>
+            <a href="https://www.litres.ru/mihail-lermontov/geroy-nashego-vremeni-8548269/" target="_blank">Читать на Litres</a>
+        </div>
+    </div>
+        </div>
+    </div>
+<!-------------------------------------------------------------------------------------->
+
+<div id="Retro Code Editor: Journal of Development-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Retro Code Editor: Journal of Development</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Retro Code Editor: Journal of Development</h1>
+
+    <div class="journal-entry">
+        <h2>Entry 1: Initial Setup (October 26, 2023)</h2>
+        <p>Today, I began work on creating a retro-style code editor using HTML, CSS, and JavaScript. The goal is to capture the essence of old-school terminal interfaces.</p>
+        <p>Key initial steps:</p>
+        <ul class="feature-list">
+            <li>Setting up the basic HTML structure with a container, toolbar, editor area, and status bar.</li>
+            <li>Styling the interface with a dark background, green text, and a monospace font for a classic terminal look.</li>
+            <li>Implementing the editable code area using a &lt;pre&gt;&lt;code&gt; element with <code>contenteditable="true"</code> to preserve whitespace and newlines.</li>
+        </ul>
+        <p>I started with a simple "Hello, World!" program to test the functionality. </p>
+    </div>
+
+    <div class="journal-entry">
+        <h2>Entry 2: Adding Buttons & Basic Functionality (October 27, 2023)</h2>
+        <p>Added the "Run", "Save", and "Clear" buttons to the toolbar and implemented the core functionality.</p>
+        <ul class="feature-list">
+            <li>Implemented the "Save" button using Javascript to save the code to a text file.</li>
+            <li>Implemented the "Run" button (with a *major* security caveat!) that executes javascript code.</li>
+            <li>Implemented the "Clear" button to reset the text in the `codeArea`.</li>
+            <li>Added automatic line and character counting to the status bar.</li>
+        </ul>
+        <p>It's important to note the security risks associated with the `runButton`. Currently, it's using `new Function()`, which is highly unsafe, and I will need to address this in future iterations.</p>
+        <p>Here's the key Javascript code for the "Save" feature:</p>
+        <div class="code-snippet">
+            <pre>
+<code>
+saveButton.addEventListener('click', () => {
+    const code = codeArea.textContent;
+    const blob = new Blob([code], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'my_retro_code.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+});
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="journal-entry">
+        <h2>Entry 3: Addressing the Security Concerns of the Run Button (October 28, 2023)</h2>
+        <p>The most significant challenge is the `runButton`. Executing arbitrary code from the code area is a huge security risk. I'm researching safer alternatives. For now, I'm adding a prominent warning. In the future, I plan to explore sandboxing techniques or using libraries like CodeMirror or Ace Editor to provide a secure code execution environment.</p>
+    </div>
+
+    <div class="journal-entry">
+        <h2>Entry 4: Improving Code Formatting (October 29, 2023)</h2>
+        <p>I made a few improvements to the code editor's formatting capabilities:</p>
+        <ul class="feature-list">
+            <li>Implemented tab key handling. When the tab key is pressed it now inserts 4 spaces to indent the code.</li>
+            <li>Improved the status bar to show both the number of lines and characters.</li>
+        </ul>
+    </div>
+
+    <div class="journal-entry">
+        <h2>Entry 5: Future Development (Ongoing)</h2>
+        <p>Future development will focus on:</p>
+        <ul class="feature-list">
+            <li>Implementing syntax highlighting.</li>
+            <li>Adding code completion and suggestions.</li>
+            <li>Improving the security of the "Run" button.</li>
+            <li>Adding more features for code editing (e.g., find and replace).</li>
+        </ul>
+        <p>This project is an excellent opportunity to learn more about web development and improve my skills.</p>
+    </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+
+<div id="Удивительный Мир Животных-modal" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Удивительный Мир Животных</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Удивительный Мир Животных</h1>
+
+    <div class="animal-entry">
+        <img class="animal-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Acinonyx_jubatus_resting_head.jpg/1200px-Acinonyx_jubatus_resting_head.jpg" alt="Гепард">
+        <div class="animal-info">
+            <h2>Гепард</h2>
+            <h3>Acinonyx jubatus</h3>
+            <p>Гепард – самое быстрое наземное животное на планете, способное развивать скорость до 115 км/ч на коротких дистанциях. Обитает в саваннах и полупустынях Африки.  В отличие от других кошек, гепарды не могут рычать, но издают высокие звуки, похожие на щебетание птиц.</p>
+            <ul class="fact-list">
+                <li><interesting>Скорость:</interesting> Разгоняется до 115 км/ч за 3 секунды.</li>
+                <li><interesting>Пятна:</interesting> Каждое пятно на шкуре гепарда уникально, как отпечатки пальцев у человека.</li>
+                <li><interesting>Слезы:</interesting> У гепардов есть черные полосы, идущие от глаз к рту, которые помогают им видеть в ярком солнечном свете, уменьшая блики.</li>
+                <li><habitat>Обитание:</habitat> Африканские саванны и полупустыни.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="animal-entry">
+        <img class="animal-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tarsius_syrichta_3_-_Cropped.jpg/800px-Tarsius_syrichta_3_-_Cropped.jpg" alt="Филиппинский долгопят">
+        <div class="animal-info">
+            <h2>Филиппинский долгопят</h2>
+            <h3>Tarsius syrichta</h3>
+            <p>Маленький ночной примат, обитающий на Филиппинах. Долгопяты известны своими огромными глазами, которые по отношению к размеру тела являются самыми большими среди всех млекопитающих.  Они также обладают способностью поворачивать голову почти на 360 градусов.</p>
+            <ul class="fact-list">
+                <li><interesting>Глаза:</interesting> Их глаза неподвижны в глазницах, поэтому они поворачивают голову, чтобы видеть вокруг.</li>
+                <li><interesting>Размер:</interesting> Размером с человеческую ладонь.</li>
+                <li><interesting>Ночной образ жизни:</interesting> Активны ночью, охотятся на насекомых.</li>
+                <li><habitat>Обитание:</habitat> Филиппинские острова.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="animal-entry">
+        <img class="animal-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Axolotl_in_aquarium.jpg/1280px-Axolotl_in_aquarium.jpg" alt="Аксолотль">
+        <div class="animal-info">
+            <h2>Аксолотль</h2>
+            <h3>Ambystoma mexicanum</h3>
+            <p>Аксолотль – это вид саламандры, который остается в личиночной форме на протяжении всей своей жизни.  Они обладают удивительной способностью регенерировать утраченные конечности, спинной мозг и даже части мозга.  Обитают только в нескольких озерах в Мексике.</p>
+            <ul class="fact-list">
+                <li><interesting>Регенерация:</interesting> Способны восстанавливать утраченные части тела.</li>
+                <li><interesting>Личиночная форма:</interesting> Не проходят метаморфоз во взрослую форму.</li>
+                <li><interesting>Жабры:</interesting> Имеют внешние жабры, придающие им необычный вид.</li>
+                <li><habitat>Обитание:</habitat> Озера в Мексике.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="animal-entry">
+        <img class="animal-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Okapi20070916.jpg/1280px-Okapi20070916.jpg" alt="Окапи">
+        <div class="animal-info">
+            <h2>Окапи</h2>
+            <h3>Okapia johnstoni</h3>
+            <p>Окапи – парнокопытное млекопитающее, обитающее в тропических лесах Демократической Республики Конго.  Хотя внешне они напоминают лошадей, окапи являются ближайшими родственниками жирафов. У них длинный язык, которым они могут чистить свои уши.</p>
+            <ul class="fact-list">
+                <li><interesting>Полоски:</interesting> Имеют полосы на задних ногах, как у зебры.</li>
+                <li><interesting>Язык:</interesting> Используют длинный язык (до 45 см) для чистки ушей и глаз.</li>
+                <li><interesting>Секретность:</interesting> Очень скрытные животные, что затрудняет их изучение.</li>
+                <li><habitat>Обитание:</habitat> Тропические леса Конго.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="animal-entry">
+        <img class="animal-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Satanic_leaf-tailed_gecko_Uroplatus_phantasticus.jpg/1280px-Satanic_leaf-tailed_gecko_Uroplatus_phantasticus.jpg" alt="Фантастический листохвостый геккон">
+        <div class="animal-info">
+            <h2>Фантастический листохвостый геккон</h2>
+            <h3>Uroplatus phantasticus</h3>
+            <p>Этот геккон – эндемик Мадагаскара, известный своей необычной маскировкой, имитирующей сухой лист.  Он обладает выростами на теле и окраской, позволяющей ему идеально сливаться с окружающей средой.  Они также могут открывать рот, чтобы показать ярко-красную пасть, отпугивая хищников.</p>
+            <ul class="fact-list">
+                <li><interesting>Маскировка:</interesting> Идеально имитирует сухой лист.</li>
+                <li><interesting>Выросты:</interesting> Имеет выросты на теле, усиливающие эффект маскировки.</li>
+                <li><interesting>Красная пасть:</interesting> Отпугивает хищников яркой окраской пасти.</li>
+                <li><habitat>Обитание:</habitat> Мадагаскар.</li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+
+    <div id="newss-modal" class="modal">  <!-- Fixed: Corrected the ID,  was newss-modal instead of news-modal-->
+        <div class="modal-header">
+            <h2 align="center">Awesome HTML Tricks: A Handbook</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Awesome HTML Tricks: A Handbook</h1>
+
+    <p><strong>Introduction</strong></p>
+    <p>Welcome to a guide dedicated to cool and not-always-obvious HTML tricks! HTML, being the foundation of the web, hides a multitude of interesting possibilities, allowing you to create more interactive, accessible, and semantically correct web pages. This book aims to reveal these secrets and inspire you to new achievements in web design. We'll explore advanced attributes, new HTML5 tags, form and media handling techniques, as well as focus on accessibility and SEO optimization. Ready? Let's begin!</p>
+
+    <h2>Chapter 1: Advanced HTML Attributes</h2>
+    <p>Attributes are an essential part of HTML elements, providing additional information about them. Besides the standard attributes, such as <code>class</code>, <code>id</code>, and <code>style</code>, there are lesser-known, but very useful, attributes.</p>
+
+    <h3><code>data-*</code> attributes</h3>
+    <p>These attributes allow you to store arbitrary data directly within an HTML element. They are perfect for passing information to JavaScript without the need for global variables or additional server requests.</p>
+    <pre><code>&lt;button data-product-id="12345" data-price="99.99"&gt;Add to Cart&lt;/button&gt;
+
+&lt;script&gt;
+    const button = document.querySelector('button');
+    const productId = button.dataset.productId;
+    const price = button.dataset.price;
+
+    console.log(`Product ID: ${productId}, Price: ${price}`);
+&lt;/script&gt;</code></pre>
+
+    <h3><code>contenteditable</code> attribute</h3>
+    <p>Turns any HTML element into an editable text field. Useful for creating WYSIWYG editors or for quickly editing content directly on the page.</p>
+    <pre><code>&lt;div contenteditable="true"&gt;
+    This text can be edited.
+&lt;/div&gt;</code></pre>
+
+    <h3><code>hidden</code> attribute</h3>
+    <p>Hides the element from display in the browser. It differs from <code>display: none</code> in CSS because it tells the browser that the element is irrelevant and doesn't need to be rendered, which can positively impact performance.</p>
+    <pre><code>&lt;p hidden&gt;This text will not be visible.&lt;/p&gt;</code></pre>
+
+    <h3><code>spellcheck</code> attribute</h3>
+    <p>Enables or disables spell checking for text fields and editable areas.</p>
+    <pre><code>&lt;textarea spellcheck="true"&gt;Text with spell check.&lt;/textarea&gt;</code></pre>
+
+    <h3><code>tabindex</code> attribute</h3>
+    <p>Controls the order of movement between elements when the Tab key is pressed. Important for accessibility, allowing users to navigate the page in a logical order.</p>
+    <pre><code>&lt;input type="text" tabindex="1" placeholder="Name"&gt;
+&lt;input type="text" tabindex="2" placeholder="Surname"&gt;
+&lt;button tabindex="3"&gt;Submit&lt;/button&gt;</code></pre>
+
+    <h3><code>accesskey</code> attribute</h3>
+    <p>Allows you to assign a shortcut key to activate an element. Usually used in combination with the Alt key (or Option on macOS).</p>
+    <pre><code>&lt;a href="#" accesskey="s"&gt;Save (Alt + S)&lt;/a&gt;</code></pre>
+
+    <h3><code>itemprop</code>, <code>itemscope</code>, <code>itemtype</code> (microdata)</h3>
+    <p>Used to add semantic information about the content of the page, which is useful for SEO and understanding content by search engines.</p>
+    <pre><code>&lt;div itemscope itemtype="http://schema.org/Product"&gt;
+    &lt;span itemprop="name"&gt;Cool product&lt;/span&gt;
+    &lt;img src="product.jpg" itemprop="image" alt="Cool product"&gt;
+    &lt;span itemprop="description"&gt;Description of the cool product.&lt;/span&gt;
+    &lt;span itemprop="price"&gt;99.99&lt;/span&gt;
+    &lt;meta itemprop="url" content="http://example.com/product"&gt;
+&lt;/div&gt;</code></pre>
+
+    <h2>Chapter 2: Modern HTML5 Tags and Their Capabilities</h2>
+    <p>HTML5 has brought a lot of new tags, significantly improving the semantics and structure of web pages.</p>
+
+    <h3><code>&lt;article&gt;</code></h3>
+    <p>Represents self-contained, independent content that can be distributed separately (e.g., a news article, a blog post).</p>
+    <pre><code>&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+    <h3><code>&lt;aside&gt;</code></h3>
+    <p>Contains content related to the main content of the page, but not part of it (e.g., a sidebar with additional information, advertisements).</p>
+    <pre><code>&lt;aside&gt;
+    &lt;h3&gt;Advertisement&lt;/h3&gt;
+    &lt;p&gt;Advertising text...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+
+    <h3><code>&lt;nav&gt;</code></h3>
+    <p>Designed for navigation elements (menus, links to other pages on the site).</p>
+    <pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+    <h3><code>&lt;header&gt;</code></h3>
+    <p>Typically contains introductory information about a section or page (title, logo, search form).</p>
+    <pre><code>&lt;header&gt;
+    &lt;h1&gt;Page Title&lt;/h1&gt;
+    &lt;img src="logo.png" alt="Logo"&gt;
+&lt;/header&gt;</code></pre>
+
+    <h3><code>&lt;footer&gt;</code></h3>
+    <p>Typically contains information about a section or page (author, publication date, links to privacy policy).</p>
+    <pre><code>&lt;footer&gt;
+    &lt;p&gt;Copyright &copy; 2023&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+    <h3><code>&lt;main&gt;</code></h3>
+    <p>Defines the main content of the document. There should be only one per page.</p>
+    <pre><code>&lt;main&gt;
+    &lt;p&gt;Main content of the page...&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+
+    <h3><code>&lt;section&gt;</code></h3>
+    <p>Represents a thematic group of content. Used to divide the page into logical sections.</p>
+    <pre><code>&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Section content...&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+    <h3><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code></h3>
+    <p>Used to represent illustrations, photographs, diagrams, etc., and to add captions to them.</p>
+    <pre><code>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="Image description"&gt;
+    &lt;figcaption&gt;Caption to the image&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+    <h3><code>&lt;mark&gt;</code></h3>
+    <p>Highlights text that is relevant to the current context (e.g., search results).</p>
+    <pre><code>&lt;p&gt;The search found the word &lt;mark&gt;HTML&lt;/mark&gt;.&lt;/p&gt;</code></pre>
+
+    <h3><code>&lt;time&gt;</code></h3>
+    <p>Represents a date and/or time. Can be used to add semantic information about the publication time of an article.</p>
+    <pre><code>&lt;time datetime="2023-10-27"&gt;October 27, 2023&lt;/time&gt;</code></pre>
+
+    <h3><code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code></h3>
+    <p>Allow you to create collapsible content sections.</p>
+    <details>
+        <summary>More Information</summary>
+        <p>Here is some hidden information.</p>
+    </details>
+    <pre><code>&lt;details&gt;
+    &lt;summary&gt;More Information&lt;/summary&gt;
+    &lt;p&gt;Here is some hidden information.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+    <h3><code>&lt;dialog&gt;</code></h3>
+    <p>Represents a dialog box or modal window. Requires JavaScript to control display and interaction.</p>
+    <pre><code>&lt;dialog id="myDialog"&gt;
+    &lt;p&gt;This is a dialog box.&lt;/p&gt;
+    &lt;button onclick="document.getElementById('myDialog').close()"&gt;Close&lt;/button&gt;
+&lt;/dialog&gt;
+
+&lt;button onclick="document.getElementById('myDialog').showModal()"&gt;Open Dialog&lt;/button&gt;</code></pre>
+
+    <h3><code>&lt;progress&gt;</code></h3>
+    <p>Displays a progress indicator for a task.</p>
+    <pre><code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code></pre>
+
+    <h3><code>&lt;meter&gt;</code></h3>
+    <p>Displays a scalar value within a given range.</p>
+    <pre><code>&lt;meter value="0.7" min="0" max="1"&gt;70%&lt;/meter&gt;</code></pre>
+
+    <h2>Chapter 3: Working with Forms: Advanced Techniques</h2>
+    <p>Forms are an important part of any web application, allowing users to interact with the site. HTML provides a wide range of possibilities for creating convenient and functional forms.</p>
+
+    <h3>New Input Types (HTML5)</h3>
+    <ul>
+        <li><code>email</code>: For entering an email address. Automatically validates the format of the entered address.</li>
+        <li><code>url</code>: For entering a URL address. Automatically validates the format of the entered address.</li>
+        <li><code>number</code>: For entering numerical values. Allows you to set minimum and maximum values, as well as a step.</li>
+        <li><code>range</code>: To select a numerical value within a given range using a slider.</li>
+        <li><code>date</code>: To select a date. Provides a convenient calendar.</li>
+        <li><code>time</code>: To select a time.</li>
+        <li><code>datetime-local</code>: For selecting the date and time in the local format.</li>
+        <li><code>color</code>: To select a color. Provides a color palette.</li>
+        <li><code>search</code>: A special field for searching.</li>
+    </ul>
+    <pre><code>&lt;input type="email" placeholder="Email"&gt;
+&lt;input type="number" min="0" max="100" step="10" value="50"&gt;
+&lt;input type="date"&gt;
+&lt;input type="color"&gt;
+&lt;input type="search" placeholder="Search..."&gt;</code></pre>
+
+    <h3>Input Field Attributes (HTML5)</h3>
+    <ul>
+        <li><code>placeholder</code>: A hint text displayed in the input field when it is empty.</li>
+        <li><code>required</code>: Requires the user to fill in the field before submitting the form.</li>
+        <li><code>autofocus</code>: Sets the focus to the input field when the page loads.</li>
+        <li><code>autocomplete</code>: Enables or disables auto-completion of input fields by the browser.</li>
+        <li><code>pattern</code>: Allows you to set a regular expression to validate the entered data.</li>
+        <li><code>minlength</code> and <code>maxlength</code>: Set the minimum and maximum length of the entered text.</li>
+    </ul>
+    <pre><code>&lt;input type="text" placeholder="Name" required minlength="3" maxlength="20" pattern="[A-Za-z]+"&gt;</code></pre>
+
+    <h3><code>&lt;datalist&gt;</code> Element</h3>
+    <p>Provides a list of suggested values for the input field. The user can select one of the suggested values or enter their own.</p>
+    <pre><code>&lt;input list="browsers" name="browser"&gt;
+&lt;datalist id="browsers"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Safari"&gt;
+    &lt;option value="Edge"&gt;
+&lt;/datalist&gt;</code></pre>
+
+    <h3><code>&lt;output&gt;</code> Element</h3>
+    <p>Represents the result of a calculation or user action.</p>
+    <pre><code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="number" id="a" value="0"&gt; +
+    &lt;input type="number" id="b" value="0"&gt; =
+    &lt;output name="result" for="a b"&gt;0&lt;/output&gt;
+&lt;/form&gt;</code></pre>
+
+    <h3>Form Validation with JavaScript</h3>
+    <p>Although HTML5 provides built-in validation, JavaScript allows you to implement more complex checks and customize error messages.</p>
+    <pre><code>&lt;form id="myForm"&gt;
+    &lt;input type="email" id="email" required&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+    const form = document.getElementById('myForm');
+    const emailInput = document.getElementById('email');
+
+    form.addEventListener('submit', (event) =&gt; {
+        if (!emailInput.validity.valid) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please enter a valid email.');
+        }
+    });
+&lt;/script&gt;</code></pre>
+
+    <h2>Chapter 4: Working with Media: Audio, Video, and Graphics</h2>
+    <p>HTML5 has greatly simplified working with media content on web pages.</p>
+
+    <h3><code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements</h3>
+    <p>Allow you to embed audio and video files directly into HTML.</p>
+    <pre><code>&lt;video width="640" height="360" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mp3"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio tag.
+&lt;/audio&gt;</code></pre>
+    <p>Attributes: <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code>, <code>poster</code>.</p>
+
+    <h3><code>&lt;source&gt;</code> element</h3>
+    <p>Allows you to specify multiple sources for a media file in different formats to ensure compatibility with different browsers.</p>
+
+    <h3><code>&lt;track&gt;</code> element</h3>
+    <p>Allows you to add subtitles, captions, or descriptions to a video.</p>
+    <pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+
+    <h3><code>&lt;canvas&gt;</code> element</h3>
+    <p>Provides a canvas for drawing graphics using JavaScript. Allows you to create interactive charts, animations, and games.</p>
+    <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'red';
+    ctx.fillRect(20, 20, 100, 50);
+&lt;/script&gt;</code></pre>
+
+    <h3><code>&lt;svg&gt;</code> element</h3>
+    <p>Allows you to embed vector graphics directly into HTML. SVG graphics scale without loss of quality and can be animated using CSS or JavaScript.</p>
+    <pre><code>&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;</code></pre>
+
+    <h2>Chapter 5: Accessibility and SEO Optimization</h2>
+    <p>Creating accessible and SEO-optimized web pages is an important part of modern web development.</p>
+
+    <h3>Semantic Markup</h3>
+    <p>Using semantic tags (as described in Chapter 2) helps search engines and assistive technologies better understand the structure and content of the page.</p>
+
+    <h3>The <code>alt</code> attribute for images</h3>
+    <p>Always add the <code>alt</code> attribute to all images, describing their content. This is important for users using screen readers, as well as for search engines.</p>
+    <pre><code>&lt;img src="image.jpg" alt="Image description"&gt;</code></pre>
+
+    <h3>Headings (<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>)</h3>
+    <p>Use headings to structure content and highlight important sections. Headings are also important for SEO.</p>
+
+    <h3><code>aria-*</code> Attributes (ARIA - Accessible Rich Internet Applications)</h3>
+    <p>Provide additional information about roles, states, and properties of interface elements, which makes web applications more accessible to users with disabilities.</p>
+    <ul>
+        <li><code>aria-label</code>: Provides a text label for the element, which will be read by a screen reader.</li>
+        <li><code>aria-describedby</code>: Points to the element containing the description of the current element.</li>
+        <li><code>aria-hidden</code>: Hides the element from screen readers.</li>
+        <li><code>aria-role</code>: Defines the role of an element in the interface.</li>
+    </ul>
+    <pre><code>&lt;button aria-label="Close dialog window"&gt;X&lt;/button&gt;
+&lt;div id="description"&gt;Element description&lt;/div&gt;
+&lt;input type="text" aria-describedby="description"&gt;</code></pre>
+
+    <h3>Text Contrast</h3>
+    <p>Make sure that the text has sufficient contrast to the background to be easily readable for people with visual impairments.</p>
+
+    <h3>Document Language (<code>lang</code> attribute)</h3>
+    <p>Specify the document language in the <code>&lt;html&gt;</code> tag.</p>
+    <pre><code>&lt;html lang="en"&gt;</code></pre>
+
+    <h3>Meta Tags</h3>
+    <p>Use meta tags to provide information about the page (description, keywords, author).</p>
+    <pre><code>&lt;meta name="description" content="Page description"&gt;
+&lt;meta name="keywords" content="keywords"&gt;</code></pre>
+
+    <h3>URLs</h3>
+    <p>Use clear and descriptive URLs.</p>
+
+    <p><strong>Conclusion</strong></p>
+    <p>HTML is a powerful and versatile tool that is constantly evolving. Learning advanced techniques and new HTML capabilities allows you to create more modern, accessible, and effective web pages. This book has only touched on some of the cool HTML tricks, but I hope it has inspired you to further research and experiment. Good luck in your web development!</p>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+
+<div id="news" class="modal">
+        <div class="modal-header">
+            <h2 align="center">programming</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Маленькие статьи по программированию</h1>
+
+    <div class="article">
+        <h2>Переменные (Variables)</h2>
+        <p><strong>RU:</strong> Переменные используются для хранения данных в программе. Им нужно давать понятные имена.</p>
+        <p><strong>EN:</strong> Variables are used to store data in a program. They should be given meaningful names.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let message = "Hello!";
+console.log(message);
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Функции (Functions)</h2>
+        <p><strong>RU:</strong> Функции – это блоки кода, которые можно вызывать многократно для выполнения определенной задачи.</p>
+        <p><strong>EN:</strong> Functions are blocks of code that can be called repeatedly to perform a specific task.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("World"));
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Условные операторы (Conditional Statements)</h2>
+        <p><strong>RU:</strong> Условные операторы (if, else) позволяют выполнять код в зависимости от выполнения условия.</p>
+        <p><strong>EN:</strong> Conditional statements (if, else) allow you to execute code depending on whether a condition is true or false.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let age = 18;
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Циклы (Loops)</h2>
+        <p><strong>RU:</strong> Циклы (for, while) позволяют повторять блок кода несколько раз.</p>
+        <p><strong>EN:</strong> Loops (for, while) allow you to repeat a block of code multiple times.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Массивы (Arrays)</h2>
+        <p><strong>RU:</strong> Массивы используются для хранения коллекции элементов.</p>
+        <p><strong>EN:</strong> Arrays are used to store a collection of elements.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let colors = ["red", "green", "blue"];
+console.log(colors[0]);
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Объекты (Objects)</h2>
+        <p><strong>RU:</strong> Объекты используются для хранения данных в виде пар "ключ-значение".</p>
+        <p><strong>EN:</strong> Objects are used to store data in key-value pairs.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let person = {
+  name: "John",
+  age: 30
+};
+console.log(person.name);
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Обработка событий (Event Handling)</h2>
+        <p><strong>RU:</strong> Обработка событий позволяет реагировать на действия пользователя (например, клики).</p>
+        <p><strong>EN:</strong> Event handling allows you to respond to user actions (e.g., clicks).</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
+});
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>DOM Manipulation</h2>
+        <p><strong>RU:</strong> DOM Manipulation – это изменение структуры и содержания HTML-документа с помощью JavaScript.</p>
+        <p><strong>EN:</strong> DOM Manipulation is changing the structure and content of an HTML document using JavaScript.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let element = document.getElementById("myElement");
+element.textContent = "New text!";
+</code>
+            </pre>
+        </div>
+    </div>
+
+     <div class="article">
+        <h2>Асинхронность (Asynchronicity)</h2>
+        <p><strong>RU:</strong> Асинхронность позволяет выполнять код, не блокируя основной поток, что важно для работы с сетью.</p>
+        <p><strong>EN:</strong> Asynchronicity allows code to be executed without blocking the main thread, which is important for network operations.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+setTimeout(function() {
+  console.log("Delayed message");
+}, 1000);
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Fetch API</h2>
+        <p><strong>RU:</strong> Fetch API предоставляет интерфейс для получения ресурсов из сети.</p>
+        <p><strong>EN:</strong> The Fetch API provides an interface for fetching resources from the network.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data));
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Arrow Functions</h2>
+        <p><strong>RU:</strong> Arrow functions – это краткий способ записи функций в JavaScript.</p>
+        <p><strong>EN:</strong> Arrow functions are a concise way to write functions in JavaScript.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+const add = (a, b) => a + b;
+console.log(add(2, 3));
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Template Literals</h2>
+        <p><strong>RU:</strong> Template literals позволяют встраивать переменные в строки.</p>
+        <p><strong>EN:</strong> Template literals allow you to embed variables inside strings.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let name = "Alice";
+let greeting = `Hello, ${name}!`;
+console.log(greeting);
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Classes</h2>
+        <p><strong>RU:</strong> Classes предоставляют способ организации кода в объектно-ориентированном стиле.</p>
+        <p><strong>EN:</strong> Classes provide a way to organize code in an object-oriented style.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+let animal = new Animal("Dog");
+animal.speak();
+</code>
+            </pre>
+        </div>
+    </div>
+
+     <div class="article">
+        <h2>JSON (JavaScript Object Notation)</h2>
+        <p><strong>RU:</strong> JSON - это формат данных, используемый для обмена данными между сервером и клиентом.</p>
+        <p><strong>EN:</strong> JSON is a data format used for exchanging data between a server and a client.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JSON
+{
+  "name": "Bob",
+  "age": 25,
+  "city": "New York"
+}
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2> Local Storage</h2>
+        <p><strong>RU:</strong> Local Storage позволяет сохранять данные в браузере пользователя.</p>
+        <p><strong>EN:</strong> Local Storage allows you to store data in the user's browser.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+localStorage.setItem("username", "johnDoe");
+let username = localStorage.getItem("username");
+console.log(username);
+</code>
+            </pre>
+        </div>
+    </div>
+
+       <div class="article">
+        <h2> События мыши (Mouse Events)</h2>
+        <p><strong>RU:</strong> Mouse Events - это события, которые происходят при взаимодействии мыши с элементами страницы.</p>
+        <p><strong>EN:</strong> Mouse Events are events that occur when a mouse interacts with page elements.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let element = document.getElementById("element");
+element.addEventListener("mouseover", function() {
+  console.log("Mouse over");
+});
+</code>
+            </pre>
+        </div>
+    </div>
+
+      <div class="article">
+        <h2> Формы (Forms)</h2>
+        <p><strong>RU:</strong> Forms - это элементы для сбора данных от пользователей.</p>
+        <p><strong>EN:</strong> Forms are elements for collecting data from users.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// HTML
+&lt;form&gt;
+  &lt;label for="name"&gt;Имя:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+&lt;/form&gt;
+</code>
+            </pre>
+        </div>
+    </div>
+
+        <div class="article">
+        <h2>Методы массивов (Array Methods)</h2>
+        <p><strong>RU:</strong> Arrays Methods - это методы для манипуляции массивами.</p>
+        <p><strong>EN:</strong> Array Methods are methods for array manipulation.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let numbers = [1, 2, 3, 4, 5];
+let doubled = numbers.map(number => number * 2);
+console.log(doubled);
+</code>
+            </pre>
+        </div>
+    </div>
+
+       <div class="article">
+        <h2>Параметры по умолчанию (Default Parameters)</h2>
+        <p><strong>RU:</strong> Параметры по умолчанию - это способ определения значений параметров функций, если они не переданы.</p>
+        <p><strong>EN:</strong> Default parameters - this is a way to define function parameter values, if they are not passed.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+function greet(name = "Guest") {
+  console.log("Hello, " + name + "!");
+}
+
+greet(); // Hello, Guest!
+greet("John"); // Hello, John!
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2> Spread Operator</h2>
+        <p><strong>RU:</strong> Spread Operator (...) позволяет расширять элементы массива или объекта.</p>
+        <p><strong>EN:</strong> The Spread Operator (...) allows you to expand array or object elements.</p>
+        <div class="code-block">
+            <pre>
+<code>
+// JavaScript
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+console.log(arr2); // [1, 2, 3, 4, 5]
+</code>
+            </pre>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+
+<div id="PayMarcet" class="modal">
+        <div class="modal-header">
+            <h2 align="center">PayMarcet</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1 id="headerH1">Привет, это мой сайт</h1>
+
+    <p id="introP">
+        Это сайт на котором выходят игры,
+        <b id="boldTextB">написанные новичками.</b>
+    </p>
+
+    <h2 id="listH2">Список игр:</h2>
+    <ul>
+        <li id="listItem1Li"><a id= "cir1" href= "file:///C:/Users/ernyl/OneDrive/Рабочий%20стол/Focus/Редакторы%20кода/RetroCoder.html" >RetroCoder</a></li>
+        <li id="listItem2Li"><a id= "cir2" href= "file:///C:/Users/ernyl/OneDrive/Рабочий%20стол/Focus/игры/1.html" >Угадай карту</a></li>
+        <li id="listItem3Li"><a id= "cir3" href= "file:///C:/Users/ernyl/OneDrive/Рабочий%20стол/Focus/Редакторы%20кода/Coderoc.html" >Coder</a></li>
+    </ul>
+<p>Эти игры написанны новичками.<p>
+    <p id="footerP">© 2023 PayMarcet</p>
+        </div>
+    </div>
+<!----------------------------------------------------------------------------------------->
+
+<div id="news" class="modal">
+        <div class="modal-header">
+            <h2 align="center">programming</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Маленькие статьи по программированию</h1>
+			</div>
+    </div>
+
+<!----------------------------------------------------------------------------------------->
+
+<div id="news" class="modal">
+        <div class="modal-header">
+            <h2 align="center">programming</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Маленькие статьи по программированию</h1>
+			</div>
+    </div>
+	
+<!---------------------------------------------------------------------------------------->
+
+<div id="news" class="modal">
+        <div class="modal-header">
+            <h2 align="center">programming</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+            <h1>Маленькие статьи по программированию</h1>
+			</div>
+    </div>
+	
+<!----------------------------------------------------------------------------------------->
+
+<div id="Привет, будущий Python-разработчик!" class="modal">
+        <div class="modal-header">
+            <h2 align="center">Привет, будущий Python-разработчик!</h2>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-content">
+             <div class="container">
+        <h1>Привет, будущий Python-разработчик!</h1>
+
+        <section id="introduction">
+            <h2>Что такое Python?</h2>
+            <p>Python - это мощный и простой в изучении язык программирования. Он используется для создания веб-сайтов, игр, анализа данных и многого другого!</p>
+            <p>Его главное преимущество - читаемый синтаксис, который делает код похожим на обычный английский язык. Это облегчает понимание и написание программ.</p>
+        </section>
+
+        <section id="setup">
+            <h2>Установка Python</h2>
+            <p>Прежде чем начать, нужно установить Python на свой компьютер. Вот как это сделать:</p>
+            <ol>
+                <li>Перейдите на сайт <a href="https://www.python.org/downloads/" target="_blank">python.org</a> и скачайте последнюю версию для своей операционной системы.</li>
+                <li>Запустите скачанный файл и следуйте инструкциям установщика. Убедитесь, что поставили галочку "Add Python to PATH" (это важно!).</li>
+                <li>Откройте командную строку (или терминал) и введите <code>python --version</code>. Если все установилось правильно, вы увидите номер версии Python.</li>
+            </ol>
+        </section>
+
+        <section id="first-program">
+            <h2>Твоя первая программа: "Hello, World!"</h2>
+            <p>Традиционно, первая программа на любом языке программирования - это вывод фразы "Hello, World!". Вот как это сделать в Python:</p>
+
+            <pre><code>
+print("Hello, World!")
+            </code></pre>
+
+            <p>Сохраните этот код в файл с расширением <code>.py</code> (например, <code>hello.py</code>) и запустите его из командной строки командой <code>python hello.py</code>. Вы увидите "Hello, World!" на экране!</p>
+        </section>
+
+        <section id="variables">
+            <h2>Переменные: Хранилища данных</h2>
+            <p>Переменные - это как ящики, в которых можно хранить данные. У каждой переменной есть имя и значение.  Например:</p>
+
+            <pre><code>
+name = "Вася"<br>
+<br>
+age = 15<br>
+<br>
+print(name) # Выведет "Вася"<br>
+<br>
+print(age) # Выведет 15<br>
+<br>
+            </code></pre>
+
+            <p>В Python не нужно указывать тип переменной. Python сам определяет его!</p>
+        </section>
+
+        <section id="data-types">
+            <h2>Основные типы данных</h2>
+            <p>Вот несколько основных типов данных в Python:</p>
+            <ul>
+                <li><code>int</code>: Целые числа (например, 10, -5, 0)</li>
+                <li><code>float</code>: Числа с плавающей точкой (например, 3.14, -2.5)</li>
+                <li><code>str</code>: Строки (текст) (например, "Привет", "Python")</li>
+                <li><code>bool</code>: Логические значения (<code>True</code> или <code>False</code>)</li>
+            </ul>
+
+            <pre><code>
+number = 10
+pi = 3.14
+greeting = "Hello!"
+is_student = True
+            </code></pre>
+        </section>
+
+        <section id="operators">
+            <h2>Операторы: Математика и Логика</h2>
+            <p>Операторы позволяют выполнять различные операции над данными.  Основные операторы:</p>
+            <ul>
+                <li>Арифметические: <code>+</code> (сложение), <code>-</code> (вычитание), <code>*</code> (умножение), <code>/</code> (деление), <code>//</code> (целочисленное деление), <code>%</code> (остаток от деления), <code>**</code> (возведение в степень)</li>
+                <li>Сравнения: <code>==</code> (равно), <code>!=</code> (не равно), <code>&gt;</code> (больше), <code>&lt;</code> (меньше), <code>&gt;=</code> (больше или равно), <code>&lt;=</code> (меньше или равно)</li>
+                <li>Логические: <code>and</code> (и), <code>or</code> (или), <code>not</code> (не)</li>
+            </ul>
+
+            <pre><code>
+x = 10
+y = 5
+print(x + y)  # Выведет 15
+print(x > y)  # Выведет True
+print(x > 5 and y < 10) # Выведет True
+            </code></pre>
+        </section>
+
+        <section id="input-output">
+            <h2>Ввод и вывод данных</h2>
+            <p><code>print()</code> используется для вывода данных на экран, а <code>input()</code> - для получения данных от пользователя.</p>
+
+            <pre><code>
+name = input("Как тебя зовут? ")
+print("Привет, " + name + "!")
+
+age = int(input("Сколько тебе лет? ")) # Преобразуем ввод в целое число
+print("Тебе " + str(age) + " лет.")
+            </code></pre>
+        </section>
+
+        <section id="game-area">
+            <h2>Мини-игра: Угадай число!</h2>
+            <p>Я загадал число от 1 до 10. Попробуй его угадать!</p>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="question-area">
+                <p class="question" id="question-text">Вы готовы начать?</p>
+                <button class="answer-btn" onclick="startGame()">Начать!</button>
+            </div>
+            <div id="result"></div>
+        </section>
+
+        <section id="test-area">
+            <h2>Проверь себя!</h2>
+            <p>Ответь на несколько вопросов, чтобы проверить свои знания.</p>
+
+            <div class="test-question">
+                <p>Что выведет код: <code>print(2 + 2)</code>?</p>
+                <ul class="test-options">
+                    <li><label><input type="radio" name="q1" value="a"> 22</label></li><br>
+					<br>
+                    <li><label><input type="radio" name="q1" value="b"> 4</label></li><br>
+					<br>
+                    <li><label><input type="radio" name="q1" value="c"> Ошибка</label></li><br>
+					<br>
+                </ul>
+            </div>
+
+            <div class="test-question">
+                <p>Какой тип данных используется для хранения текста?</p>
+                <ul class="test-options">
+                    <li><label><input type="radio" name="q2" value="a"> int</label></li><br>
+					<br>
+                    <li><label><input type="radio" name="q2" value="b"> float</label></li><br>
+                    <li><label><input type="radio" name="q2" value="c"> str</label></li>
+                </ul>
+            </div>
+
+            <button onclick="checkTest()">Проверить ответы</button>
+            <div id="test-result"></div>
+        </section>
+
+    </div>
+
+			</div>
+    </div>
+	
+<!------------------------------------------------------------------------------------------>
+</body>
+</html>
